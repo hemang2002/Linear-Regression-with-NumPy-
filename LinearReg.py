@@ -128,7 +128,7 @@ class LinearReg:
         
 if __name__ == "__main__":
     
-    df = pd.read_csv("ForestFire\forestfires.csv")
+    df = pd.read_csv("Dataset\forestfires.csv")
     df.drop(["month", "day"], axis = 1, inplace = True)
     x, y = df.iloc[:400, :-1], df.iloc[:400, -1:]
     
